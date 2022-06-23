@@ -1,0 +1,6 @@
+TEA5767_FM_Receiver	KEYWORD1
+initializeI2C	KEYWORD2
+standby	KEYWORD2
+setFrequency	KEYWORD2
+getFrequency	KEYWORD2
+getSignalLevel	KEYWORD2
