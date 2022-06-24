@@ -66,7 +66,9 @@ void dispData(double fRF, byte sl)
   //-------------------------------------------------------------------
   byte f_MSD = int(fRF)/100;
   byte f_MID = (int(fRF)/10) % 10;
-  byte f_LSD = int(fRF) % 100;
+  byte f_LSD;
+  if(fRF < 100) f_LSD = int(fRF) % 10;
+  else f_LSD = int(fRF) % 100;
   byte f_fraction = (fRF - int(fRF)) * 10;
   //-------------------------------------------------------------------
   lcd.writeByte(0, 0x80);             /*display FM station frequency*/
