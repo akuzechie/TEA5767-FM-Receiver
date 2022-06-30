@@ -11,12 +11,18 @@
 class TEA5767_FM_Receiver
 {
     public:
-        TEA5767_FM_Receiver();
-        void initializeI2C();
+        TEA5767_FM_Receiver(byte btnPlay, byte btnSearch);
+        void I2CinitTEA5767();
         void standby();
-        void setFrequency(float fRF);
-        float getFrequency();
-        byte getSignalLevel();
+        void searchStation(byte minSL);
+        void setFreq(float fRF);
+        float stationFreq();
+        byte signalLevel();
+        byte stereoBit();
+    private:
+        byte _btnPlay, _btnSearch, _minSL, readByte[5];
+        void writeTEA5767(byte byte1, byte byte2, byte byte3, byte byte4);
+        void readTEA5767();
 };
 //----------------------------------------------------------------------
 #endif
