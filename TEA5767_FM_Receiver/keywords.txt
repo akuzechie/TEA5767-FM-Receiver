@@ -1,6 +1,8 @@
 TEA5767_FM_Receiver	KEYWORD1
-initializeI2C	KEYWORD2
+I2CinitTEA5767	KEYWORD2
 standby	KEYWORD2
-setFrequency	KEYWORD2
-getFrequency	KEYWORD2
-getSignalLevel	KEYWORD2
+searchStation	KEYWORD2
+setFreq	KEYWORD2
+signalLevel	KEYWORD2
+stationFreq	KEYWORD2
+stereoBit	KEYWORD2
