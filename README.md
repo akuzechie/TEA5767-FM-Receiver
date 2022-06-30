@@ -7,3 +7,5 @@ List of public functions:
 5. stationFreq(): returns frequency (in MHz) of FM station
 6. SignalLevel(): returns signal level (in percentage) of FM station
 7. stereoBit(): returns 1 if signal stereo, otherwise 0 if mono
+
+NOTE: Before running the included example sketch, see circuit diagram of the FM receiver.
