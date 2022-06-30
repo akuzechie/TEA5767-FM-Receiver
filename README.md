@@ -1,4 +1,4 @@
-# TEA5767 FM Receiver (updated)
+# TEA5767 FM Receiver (updated June 29, 2022)
 List of public functions:
 1. I2CinitTEA5767(): sets I2C serial clock frequency (400 kHz) of ATmega328
 2. standby(): puts receiver in standby mode (audio muted)
